@@ -1,5 +1,6 @@
-$titulo-principal: #C33C54;
-$color-principal: #f5738b;
+//variable siempre al comienzo
+@import './utilities/colores';
+@import './utilities/tipografias';
 
 @import './utilities/reseteo';
 @import './secciones-scss/index';
