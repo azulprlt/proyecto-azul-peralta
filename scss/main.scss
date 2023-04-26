@@ -7,19 +7,11 @@
 
 //SECCIONES
 @import './secciones-scss/index';
-@import './secciones-scss/header';
+@import './secciones-scss/navbar';
 @import './secciones-scss/footer';
 
 //copia css primer pre entrega
 
-.logo {
-    width: 50px;
-}
-
-.flex-navbar {
-    display: flex;
-    justify-content: end;
-}
 
 .body-index {
     height: 76.5vh;
@@ -77,32 +69,6 @@ h2 {
     font-weight: bold;
     font-style: italic;
     color: #C33C54;
-}
-
-.footer {
-    background-color: #f3d1f0;
-    color: #2A2D43;
-    display: flex;
-    height: 17vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 45px;
-}
-
-.redes,
-.terminos,
-.copy {
-    display: flex;
-    justify-content: space-around;
-}
-
-.copy p {
-    margin: auto;
-}
-
-.terminos p {
-    padding: 4px;
 }
 
 ol {

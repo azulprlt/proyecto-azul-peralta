@@ -1,0 +1,17 @@
+nav {
+    background-color: $color-principal;
+
+    .navbar-brand {
+        color: white;
+        font-style: italic;
+        font-weight: bolder;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        color: beige;
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    background-color: $color-principal;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__redes {
+        display: flex;
+        list-style: none;
+        li{
+            font-size: 2rem;
+            margin: .5rem;
+        }
+    }
+}
