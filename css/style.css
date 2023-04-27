@@ -22,7 +22,10 @@ nav {
   height: 18vh;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw; }
   .footer__redes {
     display: flex;
     list-style: none; }
@@ -96,7 +99,7 @@ h2 {
 
 @media (max-width: 479px) {
   .navbar {
-    height: 21vh !important; }
+    height: 24vh !important; }
   .footer {
     height: 20vh !important; } }
 

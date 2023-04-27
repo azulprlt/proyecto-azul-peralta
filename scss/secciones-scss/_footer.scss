@@ -5,6 +5,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 
     &__redes {
         display: flex;
