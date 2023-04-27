@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     background-color: $color-principal;
-    height: 20vh;
+    min-height: 20vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;

@@ -5,8 +5,25 @@
   margin: 0;
   padding: 0; }
 
+.main__titulo {
+  text-align: center;
+  font-size: 35px; }
+
 .main__index {
-  min-height: 65vh; }
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+  margin: 10px; }
+  .main__index p {
+    margin-top: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    font-weight: bold; }
+  .main__index img {
+    padding: 20px;
+    margin: 20px; }
 
 nav {
   background-color: #d803bc; }
@@ -22,7 +39,7 @@ nav {
 .footer {
   display: flex;
   background-color: #d803bc;
-  height: 20vh;
+  min-height: 20vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }

@@ -1,5 +1,26 @@
 //index.html body
+.main__titulo {
+    text-align: center;
+    font-size: 35px
+}
 
-.main__index{
-    min-height: 65vh;
+.main__index {
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    margin: 10px;
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-family: $texto;
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    img {
+        padding: 20px;
+        margin: 20px;
+    }
 }
