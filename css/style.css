@@ -95,7 +95,12 @@ h2 {
 @media (max-width: 404px) {
   .main__index {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    height: 100vh; }
+    .main__index p {
+      font-size: 10px; }
+    .main__index__gif {
+      width: 100px; }
   .footer {
     height: 10vh; } }
 
