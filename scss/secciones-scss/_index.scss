@@ -62,17 +62,27 @@ h2 {
 }
 
 @media (max-width: 479px) {
-    .footer{
+    .footer {
         height: 20vh;
     }
 }
 
-@media (max-width: 404px){
-.main__index{
-    margin: 0;
-    padding: 0;
-}
-.footer{
-    height: 10vh;
-}
+@media (max-width: 404px) {
+    .main__index {
+        margin: 0;
+        padding: 0;
+        height: 80vh;
+
+        p {
+            font-size: 10px;
+        }
+
+        &__gif {
+            width: 100px;
+        }
+    }
+
+    .footer {
+        height: 10vh;
+    }
 }
