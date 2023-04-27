@@ -5,17 +5,6 @@
   margin: 0;
   padding: 0; }
 
-nav {
-  background-color: #d803bc; }
-  nav .navbar-brand {
-    color: white;
-    font-style: italic;
-    font-weight: bolder; }
-  nav .navbar-collapse {
-    justify-content: flex-end; }
-  nav .nav-link {
-    color: #f8f8de; }
-
 .footer {
   display: flex;
   background-color: #d803bc;
@@ -103,6 +92,17 @@ h2 {
 
 .main__biografia {
   max-height: 65vh; }
+
+nav {
+  background-color: #d803bc; }
+  nav .navbar-brand {
+    color: white;
+    font-style: italic;
+    font-weight: bolder; }
+  nav .navbar-collapse {
+    justify-content: flex-end; }
+  nav .nav-link {
+    color: #f8f8de; }
 
 .grid-container {
   display: grid;
