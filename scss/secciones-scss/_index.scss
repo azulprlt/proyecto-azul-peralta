@@ -68,10 +68,16 @@ h2 {
 }
 
 @media (max-width: 404px) {
+    h1{
+        @include titulo-principal(20px);
+    }
+    h2{
+        @include titulo-secundario (12px);
+    }
     .main__index {
         margin: 0;
         padding: 0;
-        height: 100vh;
+        height: 80vh;
 
         p {
             font-size: 10px;
@@ -83,6 +89,6 @@ h2 {
     }
 
     .footer {
-        height: 10vh;
+        height: 8vh;
     }
 }

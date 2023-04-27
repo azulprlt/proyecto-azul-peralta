@@ -93,16 +93,29 @@ h2 {
     height: 20vh; } }
 
 @media (max-width: 404px) {
+  h1 {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    color: #C33C54;
+    font-family: "marthoni";
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px 30px 10px 30px; }
+  h2 {
+    color: #f5738b;
+    font-style: italic;
+    font-size: 12px; }
   .main__index {
     margin: 0;
     padding: 0;
-    height: 100vh; }
+    height: 80vh; }
     .main__index p {
       font-size: 10px; }
     .main__index__gif {
       width: 100px; }
   .footer {
-    height: 10vh; } }
+    height: 8vh; } }
 
 .main__biografia {
   max-height: 65vh; }
