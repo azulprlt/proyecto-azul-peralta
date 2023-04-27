@@ -1,0 +1,16 @@
+@mixin titulo-principal ($fuente) {
+    display: flex;
+    font-size: $fuente;
+    justify-content: center;
+    color: #C33C54;
+    font-family: "marthoni";
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px 30px 10px 30px;
+}
+
+@mixin titulo-secundario ($fuente) {
+    color: #f5738b;
+    font-style: italic;
+    font-size: $fuente;
+}

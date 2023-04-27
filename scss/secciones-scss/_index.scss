@@ -1,4 +1,12 @@
 //index.html body
+h1{
+    @include titulo-principal(25px);
+}
+
+h2{
+ @include titulo-secundario (18px)
+}
+
 .main__titulo {
     text-align: center;
     font-size: 35px

@@ -9,92 +9,43 @@
 @import './secciones-scss/index';
 @import './secciones-scss/navbar';
 @import './secciones-scss/footer';
+@import '../scss/utilities/extend-mixin';
 
-//copia css primer pre entrega
+// .main-index {
+//     display: flex;
+//     margin: auto;
+//     justify-content: space-around;
+//     align-items: center;
+//     flex-direction: row-reverse;
+//     height: 58vh;
+// }
 
+// .texto-principal-index {
+//     display: flex;
+//     flex-direction: column;
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//     align-items: center;
+//     padding: 15px;
+//     font-size: 21px;
+// }
 
-.body-index {
-    height: 76.5vh;
-}
+// /* biografia */
+// .main-biografia{
+//     height: 100vh;
+// }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    color: #C33C54;
-    font-family: "marthoni";
-    font-weight: bolder;
-    font-style: italic;
-    padding: 10px 30px 10px 30px;
-    /* animation-name: titulo-animacion;
-    animation-iteration-count: 1;
-    animation-duration: 3s; */
-}
+// /* dicografia */
+// .titulos-discografia {
+//     font-size: 30px;
+//     color: #d45169;
+//     text-align: center;
+// }
 
-.principal {
-    font-size: 50px;
-    padding: 30px
-}
-
-h2 {
-    color: #f5738b;
-    font-style: italic;
-    font-size: 18px;
-}
-
-.main-index {
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-    height: 58vh;
-}
-
-.texto-principal-index {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    align-items: center;
-    padding: 15px;
-    font-size: 21px;
-}
-
-.parrafos {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.negrita {
-    color: #2A2D43;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
-    color: #C33C54;
-}
-
-ol {
-    list-style: none;
-    margin: auto;
-    width: 881px;
-    padding: 30px;
-}
-
-/* biografia */
-.main-biografia{
-    height: 100vh;
-}
-
-/* dicografia */
-.titulos-discografia {
-    font-size: 30px;
-    color: #d45169;
-    text-align: center;
-}
-
-.youtube,
-.spotify {
-    display: flex;
-    justify-content: center;
-}
+// .youtube,
+// .spotify {
+//     display: flex;
+//     justify-content: center;
+// }
 
 
 
