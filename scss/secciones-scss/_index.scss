@@ -1,15 +1,11 @@
 //index.html body
 h1{
-    @include titulo-principal(25px);
+    @include titulo-principal(40px);
 }
 
 h2{
- @include titulo-secundario (18px)
-}
-
-.main__titulo {
-    text-align: center;
-    font-size: 35px
+ @include titulo-secundario (23px);
+ text-align: center;
 }
 
 .main__index {
@@ -30,5 +26,34 @@ h2{
     img {
         padding: 20px;
         margin: 20px;
+    }
+}
+
+/* responsive galeria -girahtml */
+@media(max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 427px;
+        height: 1060px;
+        grid-template-areas:
+            "imagen1 imagen2"
+            "imagen3 imagen4"
+            "imagen5 imagen6"
+            "imagen7 imagen8"
+            "imagen9 imagen9";
+    }
+
+    section img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .body-grid-container {
+        height: 100vh;
+    }
+
+    .footer {
+        height: 17vh;
     }
 }

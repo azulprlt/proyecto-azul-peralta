@@ -1,0 +1,53 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+    padding: 20px;
+    align-items: center
+}
+
+.titulo-contacto {
+    color: #f5738b;
+    font-style: italic;
+    text-align: center;
+}
+
+.flex-enviar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.contacto-ultimo {
+    color: #f5738b;
+    font-style: italic;
+    padding: 10px;
+}
+
+.input,
+.discos {
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+}
+
+.input:focus {
+    background-color: #f5738b;
+    transform: scale(1.1);
+    transition: background-color 1s;
+}
+
+.boton-enviar {
+    padding: 5px;
+    border: 2px solid #5d1979e5;
+    background-color: #f8b8f3;
+}
+
+.boton-enviar:hover {
+    transition: color 1s;
+    background-color: #5d1979e5;
+    color: white;
+}
