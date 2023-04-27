@@ -41,7 +41,7 @@ h2 {
     }
 }
 
-@media (max-width: 514px) {
+@media (max-width: 594px) {
     h1 {
         @include titulo-principal(30px);
     }
@@ -63,6 +63,16 @@ h2 {
 
 @media (max-width: 479px) {
     .footer{
-        height: 20vh !important;
+        height: 20vh;
     }
+}
+
+@media (max-width: 404px){
+.main__index{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    height: 10vh;
+}
 }
