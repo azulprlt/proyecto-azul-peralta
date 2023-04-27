@@ -1,17 +1,17 @@
 //index.html body
-h1{
+h1 {
     @include titulo-principal(40px);
 }
 
-h2{
- @include titulo-secundario (23px);
- text-align: center;
+h2 {
+    @include titulo-secundario (23px);
+    text-align: center;
 }
 
 .main__index {
     display: flex;
     align-items: center;
-    min-height: 60vh;
+    min-height: 64vh;
     margin: 10px;
 
     p {
@@ -23,37 +23,48 @@ h2{
         font-weight: bold;
     }
 
-    img {
+    &__gif {
         padding: 20px;
         margin: 20px;
     }
 }
 
-/* responsive galeria -girahtml */
 @media(max-width: 767px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        width: 427px;
-        height: 1060px;
-        grid-template-areas:
-            "imagen1 imagen2"
-            "imagen3 imagen4"
-            "imagen5 imagen6"
-            "imagen7 imagen8"
-            "imagen9 imagen9";
+    .main__index {
+        display: flex;
+        flex-direction: column;
     }
 
-    section img {
-        width: 250px;
-        height: 200px;
+    &__gif {
+        width: 300px;
+    }
+}
+
+@media (max-width: 514px) {
+    h1 {
+        @include titulo-principal(30px);
     }
 
-    .body-grid-container {
-        height: 100vh;
+    h2 {
+        @include titulo-secundario (18px);
     }
 
-    .footer {
-        height: 17vh;
+    .main__index {
+        p {
+            font-size: 14px;
+        }
+
+        &__gif {
+            width: 200px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .navbar {
+        height: 22vh;
+    }
+    .footer{
+        height: 22vh;
     }
 }

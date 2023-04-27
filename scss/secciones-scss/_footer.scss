@@ -1,16 +1,26 @@
 .footer {
     display: flex;
     background-color: $color-principal;
-    min-height: 20vh;
+    height: 18vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     &__redes {
         display: flex;
         list-style: none;
-        li{
+
+        li {
             font-size: 2rem;
             margin: .5rem;
         }
+    }
+
+    &__terminos {
+        max-height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
