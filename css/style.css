@@ -96,9 +96,9 @@ h2 {
 
 @media (max-width: 479px) {
   .navbar {
-    height: 22vh; }
+    height: 21vh !important; }
   .footer {
-    height: 22vh; } }
+    height: 20vh !important; } }
 
 .main__biografia {
   max-height: 65vh; }
