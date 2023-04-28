@@ -1,33 +1,32 @@
+h1 {
+    @include titulo-principal(40px);
+}
+
+.contacto__titulo, .contacto-ultimo {
+    @include titulo-secundario (23px);
+    text-align: center;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 50vh;
-    padding: 20px;
-    align-items: center
+    height: 40vh;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.titulo-contacto {
-    color: #f5738b;
-    font-style: italic;
-    text-align: center;
-}
 
 .flex-enviar {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.contacto-ultimo {
-    color: #f5738b;
-    font-style: italic;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
 }
 
 .input,
 .discos {
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
     text-align: center;
     border-radius: 10px;
@@ -42,6 +41,7 @@
 
 .boton-enviar {
     padding: 5px;
+    margin: 13px;
     border: 2px solid #5d1979e5;
     background-color: #f8b8f3;
 }
