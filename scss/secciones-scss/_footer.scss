@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     background-color: $color-principal;
-    height: 11vh;
+    height: 16vh;
     flex-direction: column;
     align-items: center;
     position: fixed;
@@ -27,5 +27,11 @@
         p{
             margin: 0;
         }
+    }
+}
+
+@media (max-width: 404px) {
+    .footer {
+        height: 12vh;
     }
 }
