@@ -5,29 +5,59 @@
   margin: 0;
   padding: 0; }
 
-.footer {
+h1 {
   display: flex;
-  background-color: #d803bc;
-  height: 11vh;
+  font-size: 40px;
+  justify-content: center;
+  color: #C33C54;
+  font-family: "marthoni";
+  font-weight: bolder;
+  font-style: italic;
+  padding: 10px 30px 10px 30px; }
+
+.contacto__titulo, .contacto-ultimo {
+  color: #f5738b;
+  font-style: italic;
+  font-size: 23px;
+  text-align: center; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 40vh;
+  align-items: center;
+  justify-content: space-around; }
+
+.flex-enviar {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  width: 100vw; }
-  .footer__redes {
-    display: flex;
-    list-style: none; }
-    .footer__redes li {
-      font-size: 1rem;
-      margin: .4rem; }
-  .footer__terminos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px; }
-    .footer__terminos p {
-      margin: 0; }
+  padding: 10px; }
+
+.input,
+.discos {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex; }
+
+.input:focus {
+  background-color: #f5738b;
+  transform: scale(1.1);
+  transition: background-color 1s; }
+
+.boton-enviar {
+  padding: 5px;
+  margin: 13px;
+  border: 2px solid #5d1979e5;
+  background-color: #f8b8f3; }
+
+.boton-enviar:hover {
+  transition: color 1s;
+  background-color: #5d1979e5;
+  color: white; }
 
 h1 {
   display: flex;
@@ -48,44 +78,37 @@ h2 {
 .main__index {
   display: flex;
   align-items: center;
-  min-height: 64vh;
-  margin: 10px;
-  padding: 30px; }
+  min-height: 50vh;
+  margin: 10px; }
   .main__index p {
-    margin-top: 20px;
-    margin-bottom: 2rem;
+    margin: 10px 10px 10px 10px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 21px;
+    font-size: 15px;
     font-weight: bold; }
-  .main__index__gif {
-    padding: 20px;
-    margin: 20px; }
+  .main__index img {
+    width: 400px;
+    padding: 5px; }
 
 @media (max-width: 767px) {
   .main__index {
     display: flex;
     flex-direction: column; }
-  __gif {
-    width: 300px; } }
+    .main__index p {
+      font-size: 12px; }
+    .main__index img {
+      width: 250px; } }
 
 @media (max-width: 594px) {
   h1 {
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-    color: #C33C54;
-    font-family: "marthoni";
-    font-weight: bolder;
-    font-style: italic;
-    padding: 10px 30px 10px 30px; }
+    font-size: 27px; }
   h2 {
-    color: #f5738b;
-    font-style: italic;
-    font-size: 18px; }
+    font-size: 16px;
+    margin: auto; }
   .main__index p {
-    font-size: 14px; }
-  .main__index__gif {
+    font-size: 12px;
+    margin: 0; }
+  .main__index img {
     width: 200px; } }
 
 @media (max-width: 404px) {
@@ -108,10 +131,8 @@ h2 {
     height: 80vh; }
     .main__index p {
       font-size: 10px; }
-    .main__index__gif {
-      width: 100px; }
-  .footer {
-    height: 8vh; } }
+    .main__index img {
+      width: 100px; } }
 
 .main__biografia {
   max-height: 65vh; }
@@ -206,56 +227,30 @@ nav {
     height: 70vh;
     grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6" "imagen7" "imagen8" "imagen9"; } }
 
-h1 {
+.footer {
   display: flex;
-  font-size: 40px;
-  justify-content: center;
-  color: #C33C54;
-  font-family: "marthoni";
-  font-weight: bolder;
-  font-style: italic;
-  padding: 10px 30px 10px 30px; }
-
-.contacto__titulo, .contacto-ultimo {
-  color: #f5738b;
-  font-style: italic;
-  font-size: 23px;
-  text-align: center; }
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 40vh;
-  align-items: center;
-  justify-content: space-around; }
-
-.flex-enviar {
-  display: flex;
+  background-color: #d803bc;
+  height: 16vh;
   flex-direction: column;
   align-items: center;
-  padding: 10px; }
+  position: fixed;
+  bottom: 0;
+  width: 100vw; }
+  .footer__redes {
+    display: flex;
+    list-style: none; }
+    .footer__redes li {
+      font-size: 1rem;
+      margin: .4rem; }
+  .footer__terminos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px; }
+    .footer__terminos p {
+      margin: 0; }
 
-.input,
-.discos {
-  padding: 10px;
-  font-size: 18px;
-  text-align: center;
-  border-radius: 10px;
-  display: flex; }
-
-.input:focus {
-  background-color: #f5738b;
-  transform: scale(1.1);
-  transition: background-color 1s; }
-
-.boton-enviar {
-  padding: 5px;
-  margin: 13px;
-  border: 2px solid #5d1979e5;
-  background-color: #f8b8f3; }
-
-.boton-enviar:hover {
-  transition: color 1s;
-  background-color: #5d1979e5;
-  color: white; }
+@media (max-width: 404px) {
+  .footer {
+    height: 17vh; } }

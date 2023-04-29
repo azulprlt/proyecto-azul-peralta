@@ -11,22 +11,20 @@ h2 {
 .main__index {
     display: flex;
     align-items: center;
-    min-height: 64vh;
+    min-height: 50vh;
     margin: 10px;
-    padding: 30px;
 
     p {
-        margin-top: 20px;
-        margin-bottom: 2rem;
+        margin: 10px 10px 10px 10px;
         text-align: center;
         font-family: $texto;
-        font-size: 21px;
+        font-size: 15px;
         font-weight: bold;
     }
 
-    &__gif {
-        padding: 20px;
-        margin: 20px;
+    img {
+        width: 400px;
+        padding: 5px;
     }
 }
 
@@ -34,13 +32,14 @@ h2 {
     .main__index {
         display: flex;
         flex-direction: column;
-        p{
-            font-size: 17px;
-        }
-    }
 
-    &__gif {
-        width: 300px;
+        p {
+            font-size: 12px;
+        }
+
+        img {
+            width: 250px;
+        }
     }
 }
 
@@ -51,27 +50,30 @@ h2 {
 
     h2 {
         font-size: 16px;
+        margin: auto;
     }
 
     .main__index {
         p {
             font-size: 12px;
-            margin:0;
+            margin: 0;
         }
 
-        &__gif {
+        img {
             width: 200px;
         }
     }
 }
 
 @media (max-width: 404px) {
-    h1{
+    h1 {
         @include titulo-principal(20px);
     }
-    h2{
+
+    h2 {
         @include titulo-secundario (12px);
     }
+
     .main__index {
         margin: 0;
         padding: 20px;
@@ -81,7 +83,7 @@ h2 {
             font-size: 10px;
         }
 
-        &__gif {
+        img {
             width: 100px;
         }
     }
