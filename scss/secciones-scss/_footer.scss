@@ -1,38 +1,46 @@
 footer {
-    display: flex;
+    @extend .flex;
     background-color: $color-principal;
-    height: 16vh;
-    flex-direction: column;
-    align-items: center;
+    min-height: 16vh;
     position: fixed;
     bottom: 0;
     width: 100vw;
 
     .redes {
         display: flex;
-        list-style: none;
-
+        justify-content: center;
         li {
+            list-style: none;
             font-size: 1rem;
             margin: .4rem;
         }
     }
 
     .terminos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend .flex;
         justify-content: center;
         font-size: 10px;
 
         p {
             margin: 0;
+            a{
+                &:link{
+                    color: #fd0303;
+                }
+                &:active{
+                    color:#580505;
+                }
+                &:visited{
+                    color: black;
+                }
+
+            }
         }
     }
 }
 
 @media (max-width: 425px) {
     footer {
-        height: 13vh;
+        min-height: 13vh;
     }
 }

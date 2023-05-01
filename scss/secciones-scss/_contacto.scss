@@ -1,25 +1,26 @@
 h1 {
-    @include titulo-principal(40px);
+    @include titulo-principal(25px);
 }
 
 .contacto__titulo,
 .contacto-ultimo {
-    @include titulo-secundario (23px);
+    @include titulo-secundario (14px);
     text-align: center;
+    margin-top: 10px;
 }
 
 .contacto__formulario {
+    min-height: 80%;
     .formulario {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 40vh;
         align-items: center;
         justify-content: space-around;
 
         .input {
-            padding: 10px;
-            font-size: 18px;
+            margin: 5px;
+            font-size: 14px;
             text-align: center;
             border-radius: 10px;
             display: flex;
@@ -36,28 +37,27 @@ h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
 
         .discos {
-            padding: 10px;
-            font-size: 18px;
+            margin: 5px;
+            font-size: 14px;
             text-align: center;
             border-radius: 10px;
             display: flex;
 
-            .boton-enviar {
-                padding: 5px;
-                margin: 13px;
-                border: 2px solid #5d1979e5;
-                background-color: #f8b8f3;
-
-                &:hover {
-                    transition: color 1s;
-                    background-color: #5d1979e5;
-                    color: white;
-                }
-            }
         }
     }
 
+    .boton-enviar {
+        padding: 5px;
+        margin: 13px;
+        border: 2px solid #5d1979e5;
+        background-color: #f8b8f3;
+    }
+}
+
+.boton-enviar:hover {
+    transition: color 1s;
+    background-color: #5d1979e5;
+    color: white;
 }

@@ -1,16 +1,16 @@
 //variable siempre al comienzo
 @import './utilities/colores';
 @import './utilities/tipografias';
-@import '../scss/utilities/extend-mixin';
 
 //RESETEO
 @import './utilities/reseteo';
+@import '../scss/utilities/extend-mixin';
 
 //SECCIONES
 @import './secciones-scss/contacto';
-@import './secciones-scss/index'; //indexhtml
 @import './secciones-scss/index-biografia';
 @import './secciones-scss/navbar';
 @import './secciones-scss/discografia';
 @import './secciones-scss/galeria';
+@import './secciones-scss/index'; //indexhtml
 @import './secciones-scss/footer';

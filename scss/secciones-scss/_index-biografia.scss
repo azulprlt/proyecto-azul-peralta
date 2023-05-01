@@ -1,8 +1,9 @@
+h1{
+    @include titulo-principal(35px);
+}
 .main__biografia {
-    max-height: 100vh;
-
-    .accordion-body {
-            height: 100vh;
+    &__titulos{
+        @include titulo-secundario (18px);
+        text-align: center;
     }
 }
-
