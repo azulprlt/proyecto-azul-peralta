@@ -79,12 +79,20 @@ h1 {
   padding: 10px 30px 10px 30px; }
 
 .main__biografia {
-  min-height: 1200px; }
+  min-height: 1250px; }
   .main__biografia__titulos {
     color: #f5738b;
     font-style: italic;
     font-size: 18px;
     text-align: center; }
+
+@media (max-width: 768px) {
+  .main__biografia {
+    min-height: 1480px; } }
+
+@media (max-width: 425px) {
+  .main__biografia {
+    min-height: 2100px; } }
 
 nav {
   background-color: #d803bc; }
