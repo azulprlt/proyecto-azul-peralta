@@ -2,7 +2,7 @@ h1{
     @include titulo-principal(35px);
 }
 .main__biografia {
-    min-height: 1050px;
+    min-height: 1200px;
     &__titulos{
         @include titulo-secundario (18px);
         text-align: center;
