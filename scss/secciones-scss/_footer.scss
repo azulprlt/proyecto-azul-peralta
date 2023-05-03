@@ -44,3 +44,9 @@ footer {
         min-height: 13vh;
     }
 }
+
+@media(max-width: 320px) {
+    footer{
+        min-height: 10vh;
+    }
+}

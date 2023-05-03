@@ -91,8 +91,18 @@ h1 {
     min-height: 1480px; } }
 
 @media (max-width: 425px) {
+  h1 {
+    font-size: 20px !important; }
   .main__biografia {
     min-height: 2100px; } }
+
+@media (max-width: 375px) {
+  .main__biografia {
+    min-height: 2400px; } }
+
+@media (max-width: 320px) {
+  .main__biografia {
+    min-height: 3200px; } }
 
 nav {
   background-color: #d803bc; }
@@ -301,3 +311,7 @@ footer {
 @media (max-width: 425px) {
   footer {
     min-height: 13vh; } }
+
+@media (max-width: 320px) {
+  footer {
+    min-height: 10vh; } }
