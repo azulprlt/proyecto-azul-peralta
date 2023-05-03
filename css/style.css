@@ -78,11 +78,13 @@ h1 {
   font-style: italic;
   padding: 10px 30px 10px 30px; }
 
-.main__biografia__titulos {
-  color: #f5738b;
-  font-style: italic;
-  font-size: 18px;
-  text-align: center; }
+.main__biografia {
+  min-height: 1050px; }
+  .main__biografia__titulos {
+    color: #f5738b;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center; }
 
 nav {
   background-color: #d803bc; }
@@ -98,7 +100,8 @@ nav {
 .main__discografia {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  min-height: 705px; }
 
 .grid-container {
   display: grid;
@@ -259,7 +262,7 @@ h2 {
 
 footer {
   background-color: #d803bc;
-  min-height: 16vh;
+  min-height: 14vh;
   position: fixed;
   bottom: 0;
   width: 100vw; }
