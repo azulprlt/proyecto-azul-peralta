@@ -30,7 +30,7 @@ h1 {
   margin-top: 10px; }
 
 .contacto__formulario {
-  min-height: 80%; }
+  min-height: 49vh; }
   .contacto__formulario .formulario {
     display: flex;
     flex-direction: column;
@@ -69,6 +69,17 @@ h1 {
   transition: color 1s;
   background-color: #5d1979e5;
   color: white; }
+
+nav {
+  background-color: #d803bc; }
+  nav .navbar-brand {
+    color: white;
+    font-style: italic;
+    font-weight: bolder; }
+  nav .navbar-collapse {
+    justify-content: flex-end; }
+  nav .nav-link {
+    color: #f8f8de; }
 
 h1 {
   display: flex;
@@ -114,38 +125,18 @@ h1 {
   .main__biografia {
     min-height: 3200px; } }
 
-nav {
-  background-color: #d803bc; }
-  nav .navbar-brand {
-    color: white;
-    font-style: italic;
-    font-weight: bolder; }
-  nav .navbar-collapse {
-    justify-content: flex-end; }
-  nav .nav-link {
-    color: #f8f8de; }
-
-.main__discografia {
-  display: flex;
-  flex-direction: column;
-  min-height: 70vh; }
-
-@media (max-width: 768px) {
-  .main__discografia {
-    align-items: center; } }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6" "imagen7 imagen8 imagen9";
   margin: 10px auto;
-  min-height: 1500px; }
+  min-height: 80vh; }
 
 .grid-container img {
-  width: 370px;
-  height: 370px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.342); }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.342);
+  width: 400px;
+  height: 400px; }
 
 .body-grid-container {
   display: flex;
@@ -190,8 +181,6 @@ nav {
 
 /* responsive galeria -girahtml */
 @media (max-width: 1024px) {
-  .grid-container {
-    min-height: 1400px; }
   .grid-container img {
     width: 300px;
     height: 300px; } }
@@ -200,35 +189,49 @@ nav {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    width: 90;
-    min-height: 1600px;
+    width: 81vw;
+    min-height: 85vh;
     grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "imagen5 imagen6" "imagen7 imagen8"; }
   .grid-container img {
-    width: 300px;
-    height: 300px; }
+    width: 280px;
+    height: 280px; }
   .imagen9 {
     display: none; } }
 
 @media (max-width: 425px) {
   .grid-container {
     width: 90vw;
-    min-height: 1000px; }
+    min-height: 90vh; }
   .grid-container img {
-    width: 150px;
-    height: 150px; } }
+    width: 160px;
+    height: 160px; } }
 
 @media (max-width: 375px) {
   .grid-container {
     width: 100vw;
-    min-height: 950px; }
-  .grid-container img {
-    width: 140px;
-    height: 140px; } }
+    min-height: 85vh; } }
 
 @media (max-width: 320px) {
   .grid-container img {
     width: 130px;
     height: 130px; } }
+
+.main__discografia {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh; }
+
+h2 {
+  color: #f5738b;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px; }
+
+.youtube {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center; }
 
 h1 {
   display: flex;
@@ -249,7 +252,7 @@ h2 {
 .main__index {
   display: flex;
   align-items: center;
-  min-height: 50vh;
+  min-height: 52vh;
   margin: 10px; }
   .main__index p {
     margin: 10px 10px 10px 10px;

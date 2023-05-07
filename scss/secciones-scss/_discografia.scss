@@ -4,8 +4,21 @@
      min-height: 70vh;
  }
 
- @media(max-width: 768px) {
-    .main__discografia{
-        align-items: center;
-    }
- }
+ h2 {
+    @include titulo-secundario (18px);
+    text-align: center;
+    padding: 15px;
+}
+
+.youtube {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+
+//  @media(max-width: 768px) {
+//     .main__discografia{
+//         align-items: center;
+//     }
+//  }
