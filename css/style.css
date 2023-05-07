@@ -315,7 +315,7 @@ h1 {
   padding: 10px 30px 10px 30px; }
 
 .main__biografia {
-  min-height: 67.7vh; }
+  min-height: 70vh; }
   .main__biografia__titulos {
     color: #f5738b;
     font-style: italic;
@@ -332,18 +332,8 @@ h1 {
 
 @media (max-width: 768px) {
   .main__biografia {
-    min-height: 1480px; } }
+    min-height: 75vh; } }
 
 @media (max-width: 425px) {
   h1 {
-    font-size: 20px !important; }
-  .main__biografia {
-    min-height: 2100px; } }
-
-@media (max-width: 375px) {
-  .main__biografia {
-    min-height: 2400px; } }
-
-@media (max-width: 320px) {
-  .main__biografia {
-    min-height: 3200px; } }
+    font-size: 20px !important; } }
