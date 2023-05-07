@@ -7,8 +7,15 @@
  h2 {
     @include titulo-secundario (18px);
     text-align: center;
+}
+
+h3{
+    @include titulo-secundario (18px);
+    text-align: center;
     padding: 15px;
 }
+
+
 
 .youtube {
     display: flex;
