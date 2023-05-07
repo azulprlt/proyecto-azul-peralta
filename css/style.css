@@ -42,7 +42,9 @@ h1 {
       font-size: 14px;
       text-align: center;
       border-radius: 10px;
-      display: flex; }
+      display: flex;
+      border: none;
+      box-shadow: 0 0 8px rgba(235, 62, 191, 0.342); }
       .contacto__formulario .formulario .input:focus {
         background-color: #f5738b;
         transform: scale(1.1);
@@ -79,12 +81,20 @@ h1 {
   padding: 10px 30px 10px 30px; }
 
 .main__biografia {
-  min-height: 1250px; }
+  min-height: 67.7vh; }
   .main__biografia__titulos {
     color: #f5738b;
     font-style: italic;
     font-size: 18px;
     text-align: center; }
+
+.accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: #f162d06e;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #fdfeff; }
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(231 13 174 / 60%); }
 
 @media (max-width: 768px) {
   .main__biografia {
@@ -118,8 +128,11 @@ nav {
 .main__discografia {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 705px; }
+  min-height: 70vh; }
+
+@media (max-width: 768px) {
+  .main__discografia {
+    align-items: center; } }
 
 .grid-container {
   display: grid;
@@ -132,7 +145,7 @@ nav {
 .grid-container img {
   width: 370px;
   height: 370px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.342); }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.342); }
 
 .body-grid-container {
   display: flex;
@@ -298,8 +311,6 @@ h2 {
 footer {
   background-color: #d803bc;
   min-height: 14vh;
-  position: fixed;
-  bottom: 0;
   width: 100vw; }
   footer .redes {
     display: flex;

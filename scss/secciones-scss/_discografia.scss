@@ -1,6 +1,11 @@
-.main__discografia{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 705px;
-}
+ .main__discografia {
+     display: flex;
+     flex-direction: column;
+     min-height: 70vh;
+ }
+
+ @media(max-width: 768px) {
+    .main__discografia{
+        align-items: center;
+    }
+ }

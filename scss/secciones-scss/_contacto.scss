@@ -24,6 +24,8 @@ h1 {
             text-align: center;
             border-radius: 10px;
             display: flex;
+            border: none;
+            box-shadow: 0 0 8px rgba(235, 62, 191, 0.342);
 
             &:focus {
                 background-color: #f5738b;
