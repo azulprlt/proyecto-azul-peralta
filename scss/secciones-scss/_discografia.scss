@@ -1,3 +1,8 @@
+.fondo-discografia {
+    background-image: url('https://res.cloudinary.com/dcsngmqbi/image/upload/v1683840782/739436621_230685598_1706x960_jopsrf.webp');
+    @extend .fondo;
+}
+
 .main__discografia {
     display: flex;
     flex-direction: column;

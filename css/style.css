@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center; }
 
-.fondo, .fondo-biografia {
+.fondo, .fondo-discografia, .fondo-biografia {
   height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,6 +92,11 @@ nav {
 
 .nav-link:hover {
   color: "Sacramento", cursive !important; }
+
+.carousel {
+  width: 80%;
+  position: relative;
+  left: 10%; }
 
 .grid-container {
   display: grid;
@@ -183,6 +188,9 @@ nav {
   .grid-container img {
     width: 130px;
     height: 130px; } }
+
+.fondo-discografia {
+  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683840782/739436621_230685598_1706x960_jopsrf.webp"); }
 
 .main__discografia {
   display: flex;
