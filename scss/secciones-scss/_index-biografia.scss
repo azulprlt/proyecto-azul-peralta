@@ -5,17 +5,12 @@ h1 {
 
 .fondo-biografia {
     background-image: url('https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg');
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fdfeff79;
-    font-family: $titulo-principal;
-    display: flex;
-    justify-content: flex-end;
+    @extend .fondo;
 }
 
 .main__biografia {
-    min-height: 60vh;
+    min-height: 50vh;
+    padding: 10px;
 
     &__titulos {
         @include titulo-secundario (18px);
@@ -31,6 +26,48 @@ h1 {
 
 .accordion {
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(231 13 174 / 60%);
+}
+
+
+.filmografia {
+    width: 100vw;
+    margin: 15px;
+
+    h3 {
+        @include titulo-secundario (24px);
+        font-weight: bolder;
+    }
+
+    h4 {
+        color: $titulo;
+        font-size: 21px;
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    &__tarjeta {
+        background-color: #f98b9f42;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.342);
+        width: 90vw;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+
+        &__parrafos {
+            font-size: 15px;
+            margin: 15px;
+        }
+
+        &__flex {
+            display: flex;
+
+            iframe {
+                padding: 15px;
+            }
+        }
+    }
+
 }
 
 @media(max-width: 768px) {

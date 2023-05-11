@@ -5,6 +5,16 @@
     align-items: center;
 }
 
+.fondo {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fdfeff79;
+    font-family: $titulo-principal;
+    display: flex;
+    justify-content: flex-end;
+}
+
 @mixin titulo-principal ($fuente) {
     display: flex;
     font-size: $fuente;

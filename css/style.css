@@ -4,12 +4,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Montserrat", sans-serif; }
 
 .flex, footer, footer .terminos {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.fondo, .fondo-biografia {
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fdfeff79;
+  font-family: "Sacramento", cursive;
+  display: flex;
+  justify-content: flex-end; }
 
 h1 {
   display: flex;
@@ -199,7 +209,7 @@ h3 {
 
 .body-discos {
   font-family: "Sacramento", cursive;
-  height: 74vh;
+  height: 64vh;
   width: 90vw;
   display: flex; }
 
@@ -209,7 +219,7 @@ h3 {
 
 .wrapper {
   position: relative;
-  left: 20%;
+  left: 28%;
   width: 100%;
   max-width: 680px;
   height: auto;
@@ -329,17 +339,11 @@ h1 {
   color: #d91783; }
 
 .fondo-biografia {
-  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg");
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fdfeff79;
-  font-family: "Sacramento", cursive;
-  display: flex;
-  justify-content: flex-end; }
+  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg"); }
 
 .main__biografia {
-  min-height: 60vh; }
+  min-height: 50vh;
+  padding: 10px; }
   .main__biografia__titulos {
     color: #f5738b;
     font-style: italic;
@@ -353,6 +357,35 @@ h1 {
 
 .accordion {
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(231 13 174 / 60%); }
+
+.filmografia {
+  width: 100vw;
+  margin: 15px; }
+  .filmografia h3 {
+    color: #f5738b;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bolder; }
+  .filmografia h4 {
+    color: #f806bc;
+    font-size: 21px;
+    margin: 20px;
+    font-weight: bold; }
+  .filmografia__tarjeta {
+    background-color: #f98b9f42;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.342);
+    width: 90vw;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; }
+    .filmografia__tarjeta__parrafos {
+      font-size: 15px;
+      margin: 15px; }
+    .filmografia__tarjeta__flex {
+      display: flex; }
+      .filmografia__tarjeta__flex iframe {
+        padding: 15px; }
 
 @media (max-width: 768px) {
   .main__biografia {
