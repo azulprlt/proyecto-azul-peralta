@@ -14,4 +14,9 @@ nav {
     .nav-link {
         color: #f8f8de;
     }
+
+}
+
+.nav-link:hover {
+    color: $titulo-principal !important;
 }

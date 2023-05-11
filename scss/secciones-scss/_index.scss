@@ -1,6 +1,7 @@
 //index.html body
-h1 {
-    @include titulo-principal(30px);
+.titulo {
+    @include titulo-principal(36px);
+    color: #ffffff6e;
 }
 
 h2 {
@@ -8,17 +9,31 @@ h2 {
     text-align: center;
 }
 
+h1 {
+    margin-top: 1rem;
+}
+ 
+.header{
+    background-image: url('https://res.cloudinary.com/dcsngmqbi/image/upload/v1683739756/Harry1-1_ahowes.webp');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+}
+
 .main__index {
     display: flex;
     align-items: center;
-    min-height: 67vh;
+    min-height: 60vh;
     margin: 10px;
 
     p {
         margin: 10px 10px 10px 10px;
         text-align: center;
         font-family: $texto;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: bold;
 
         &::before{
@@ -27,9 +42,7 @@ h2 {
     }
 
     img {
-        width: 400px;
-        padding: 5px;
-        border-radius: 80%;
+        width: 420px;
     }
 }
 

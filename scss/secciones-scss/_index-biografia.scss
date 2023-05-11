@@ -1,5 +1,6 @@
 h1{
     @include titulo-principal(35px);
+    color: #d91783;
 }
 .main__biografia {
     min-height: 70vh;
