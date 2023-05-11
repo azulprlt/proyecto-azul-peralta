@@ -1,10 +1,23 @@
-h1{
+h1 {
     @include titulo-principal(35px);
     color: #d91783;
 }
+
+.fondo-biografia {
+    background-image: url('https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fdfeff79;
+    font-family: $titulo-principal;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .main__biografia {
-    min-height: 70vh;
-    &__titulos{
+    min-height: 60vh;
+
+    &__titulos {
         @include titulo-secundario (18px);
         text-align: center;
     }
@@ -14,19 +27,20 @@ h1{
     color: #000000;
     background-color: #f162d06e;
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #fdfeff;
-    }
-.accordion{
+}
+
+.accordion {
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(231 13 174 / 60%);
 }
 
 @media(max-width: 768px) {
-    .main__biografia{
+    .main__biografia {
         min-height: 75vh;
     }
 }
 
 @media(max-width: 425px) {
-    h1{
+    h1 {
         font-size: 20px !important;
     }
 }

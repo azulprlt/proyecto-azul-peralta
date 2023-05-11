@@ -1,19 +1,47 @@
+.main__discografia {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+h2 {
+    @include titulo-secundario (18px);
+    text-align: center;
+}
+
+h3 {
+    @include titulo-secundario (18px);
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+.youtube {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
 .body-discos {
     // background-color: #3d3d3d;
-    // height: 100vh;
     font-family: $titulo-principal;
-    height: 50vh;
-    width:90vw;
+    height: 74vh;
+    width: 90vw;
     display: flex;
 }
 
+.boton{
+    color: white;
+    text-decoration: none;
+}
+
 .wrapper {
-    position: absolute;
-    // bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    left: 20%;
+    // transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 1180px;
+    max-width: 680px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +52,7 @@
     flex: 1;
     flex-basis: 300px;
     flex-grow: 0;
-    height: 440px;
+    height: 380px;
     background: #fff;
     border: 2px solid #fff;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, .5);
@@ -99,33 +127,6 @@
     transform: scale(.95) translateX(-5px);
     transition: all .5s ease-in-out;
 }
-
-
-.main__discografia {
-    display: flex;
-    flex-direction: column;
-    min-height: 70vh;
-}
-
-h2 {
-    @include titulo-secundario (18px);
-    text-align: center;
-}
-
-h3 {
-    @include titulo-secundario (18px);
-    text-align: center;
-    padding: 15px;
-}
-
-
-
-.youtube {
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
 
 //  @media(max-width: 768px) {
 //     .main__discografia{

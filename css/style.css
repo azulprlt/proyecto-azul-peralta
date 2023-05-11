@@ -174,18 +174,44 @@ nav {
     width: 130px;
     height: 130px; } }
 
+.main__discografia {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh; }
+
+h2 {
+  color: #f5738b;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center; }
+
+h3 {
+  color: #f5738b;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px; }
+
+.youtube {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center; }
+
 .body-discos {
   font-family: "Sacramento", cursive;
-  height: 50vh;
+  height: 74vh;
   width: 90vw;
   display: flex; }
 
+.boton {
+  color: white;
+  text-decoration: none; }
+
 .wrapper {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  left: 20%;
   width: 100%;
-  max-width: 1180px;
+  max-width: 680px;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +221,7 @@ nav {
   flex: 1;
   flex-basis: 300px;
   flex-grow: 0;
-  height: 440px;
+  height: 380px;
   background: #fff;
   border: 2px solid #fff;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
@@ -261,29 +287,6 @@ nav {
   transform: scale(0.95) translateX(-5px);
   transition: all .5s ease-in-out; }
 
-.main__discografia {
-  display: flex;
-  flex-direction: column;
-  min-height: 70vh; }
-
-h2 {
-  color: #f5738b;
-  font-style: italic;
-  font-size: 18px;
-  text-align: center; }
-
-h3 {
-  color: #f5738b;
-  font-style: italic;
-  font-size: 18px;
-  text-align: center;
-  padding: 15px; }
-
-.youtube {
-  display: flex;
-  margin-bottom: 20px;
-  justify-content: center; }
-
 footer {
   background-color: #f5738b;
   min-height: 14vh;
@@ -325,8 +328,18 @@ h1 {
   padding: 10px 30px 10px 30px;
   color: #d91783; }
 
+.fondo-biografia {
+  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fdfeff79;
+  font-family: "Sacramento", cursive;
+  display: flex;
+  justify-content: flex-end; }
+
 .main__biografia {
-  min-height: 70vh; }
+  min-height: 60vh; }
   .main__biografia__titulos {
     color: #f5738b;
     font-style: italic;
