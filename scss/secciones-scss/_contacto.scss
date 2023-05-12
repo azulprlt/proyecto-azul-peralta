@@ -1,5 +1,11 @@
-h1 {
-    @include titulo-principal(25px);
+.contacto_titulo-principal {
+    @include titulo-principal(35px);
+    margin: 0;
+}
+
+.contacto__fondo {
+    background: rgb(245,115,139);
+background: linear-gradient(124deg, rgba(245,115,139,0.40940126050420167) 1%, rgba(207,193,209,0.17130602240896353) 52%, rgba(245,115,139,0.13769257703081228) 95%);
 }
 
 .contacto__titulo,
@@ -11,6 +17,7 @@ h1 {
 
 .contacto__formulario {
     min-height: 60vh;
+
     .formulario {
         display: flex;
         flex-direction: column;

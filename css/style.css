@@ -21,14 +21,19 @@
   display: flex;
   justify-content: flex-end; }
 
-h1 {
+.contacto_titulo-principal {
   display: flex;
-  font-size: 25px;
+  font-size: 35px;
   justify-content: center;
   font-family: "Sacramento", cursive;
   font-weight: bolder;
   font-style: italic;
-  padding: 10px 30px 10px 30px; }
+  padding: 10px 30px 10px 30px;
+  margin: 0; }
+
+.contacto__fondo {
+  background: #f5738b;
+  background: linear-gradient(124deg, rgba(245, 115, 139, 0.409401) 1%, rgba(207, 193, 209, 0.171306) 52%, rgba(245, 115, 139, 0.137693) 95%); }
 
 .contacto__titulo,
 .contacto-ultimo {
@@ -94,9 +99,9 @@ nav {
   color: "Sacramento", cursive !important; }
 
 .carousel {
-  width: 80%;
+  width: 60%;
   position: relative;
-  left: 10%; }
+  left: 20%; }
 
 .grid-container {
   display: grid;
