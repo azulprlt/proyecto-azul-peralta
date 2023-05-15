@@ -1,19 +1,5 @@
 //index.html body
-.titulo {
-    @include titulo-principal(36px);
-    color: #ffffff6e;
-}
-
-h2 {
-    @include titulo-secundario (18px);
-    text-align: center;
-}
-
-h1 {
-    margin-top: 1rem;
-}
- 
-.header{
+.header {
     background-image: url('https://res.cloudinary.com/dcsngmqbi/image/upload/v1683739756/Harry1-1_ahowes.webp');
     height: 90vh;
     background-repeat: no-repeat;
@@ -21,6 +7,11 @@ h1 {
     background-position: center;
     display: flex;
     justify-content: space-around;
+
+    .titulo {
+        @include titulo-principal(36px);
+        color: #ffffff6e;
+    }
 }
 
 .main__index {
@@ -36,7 +27,7 @@ h1 {
         font-size: 16px;
         font-weight: bold;
 
-        &::before{
+        &::before {
             content: "✨";
         }
     }
@@ -46,13 +37,10 @@ h1 {
     }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 768px) {
     .main__index {
-        display: flex;
-        flex-direction: column;
-
         p {
-            font-size: 10px;
+            font-size: 13px;
         }
 
         img {
@@ -61,40 +49,47 @@ h1 {
     }
 }
 
-@media (max-width: 594px) {
-    h1 {
-        font-size: 15px;
+@media (max-width: 425px) {
+    .header {
+        .titulo {
+            font-size: 28px;
+        }
     }
 
-    h2 {
-        font-size: 10px;
-        margin: 10px 10px 10px 10px;
+    h1 {
+        font-size: 21px;
     }
 
     .main__index {
+        display: flex;
+        flex-direction: column;
+
         p {
             font-size: 12px;
             margin: 10px;
         }
 
         img {
-            width: 230px;
+            width: 200px;
         }
     }
 }
 
-@media (max-width: 404px) {
-    h1 {
-        @include titulo-principal(15px);
+@media (max-width: 375px) {
+    .header {
+        .titulo {
+            font-size: 20px;
+        }
     }
 
-    h2 {
-        @include titulo-secundario (12px);
+    h1 {
+        font-size: 23px;
+        margin: 0;
     }
 
     .main__index {
         margin: 0;
-        padding: 20px;
+        padding: 5px;
         min-height: 80vh;
 
         p {

@@ -1,19 +1,18 @@
-.contacto_titulo-principal {
-    @include titulo-principal(35px);
-    margin: 0;
-}
-
 .contacto__fondo {
-    background: rgb(245,115,139);
-background: linear-gradient(124deg, rgba(245,115,139,0.40940126050420167) 1%, rgba(207,193,209,0.17130602240896353) 52%, rgba(245,115,139,0.13769257703081228) 95%);
-}
+    background: linear-gradient(205deg, rgba(245, 115, 139, 0.2861519607843137) 12%, rgba(207, 193, 209, 0.11248249299719892) 50%, rgba(245, 115, 139, 0.19371498599439774) 88%, rgba(245, 115, 139, 0.19371498599439774) 95%);
 
-.contacto__titulo,
-.contacto-ultimo {
-    @include titulo-secundario (14px);
-    text-align: center;
-    margin-top: 10px;
-}
+    &__titulo-principal {
+        @include titulo-principal(35px);
+    }
+
+    &__secundario {
+        @include titulo-secundario (15px);
+        text-align: center;
+        margin-top: 10px;
+    }
+    }
+
+// formulario
 
 .contacto__formulario {
     min-height: 60vh;
@@ -21,12 +20,13 @@ background: linear-gradient(124deg, rgba(245,115,139,0.40940126050420167) 1%, rg
     .formulario {
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 99vw;
         align-items: center;
         justify-content: space-around;
 
         .input {
-            margin: 5px;
+            margin: 7px;
+            padding: 5px;
             font-size: 14px;
             text-align: center;
             border-radius: 10px;
@@ -39,21 +39,6 @@ background: linear-gradient(124deg, rgba(245,115,139,0.40940126050420167) 1%, rg
                 transform: scale(1.1);
                 transition: background-color 1s;
             }
-        }
-    }
-
-    .flex-enviar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .discos {
-            margin: 5px;
-            font-size: 14px;
-            text-align: center;
-            border-radius: 10px;
-            display: flex;
-
         }
     }
 
@@ -70,3 +55,5 @@ background: linear-gradient(124deg, rgba(245,115,139,0.40940126050420167) 1%, rg
     background-color: #5d1979e5;
     color: white;
 }
+
+

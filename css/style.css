@@ -21,69 +21,6 @@
   display: flex;
   justify-content: flex-end; }
 
-.contacto_titulo-principal {
-  display: flex;
-  font-size: 35px;
-  justify-content: center;
-  font-family: "Sacramento", cursive;
-  font-weight: bolder;
-  font-style: italic;
-  padding: 10px 30px 10px 30px;
-  margin: 0; }
-
-.contacto__fondo {
-  background: #f5738b;
-  background: linear-gradient(124deg, rgba(245, 115, 139, 0.409401) 1%, rgba(207, 193, 209, 0.171306) 52%, rgba(245, 115, 139, 0.137693) 95%); }
-
-.contacto__titulo,
-.contacto-ultimo {
-  color: #f5738b;
-  font-style: italic;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 10px; }
-
-.contacto__formulario {
-  min-height: 60vh; }
-  .contacto__formulario .formulario {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-around; }
-    .contacto__formulario .formulario .input {
-      margin: 5px;
-      font-size: 14px;
-      text-align: center;
-      border-radius: 10px;
-      display: flex;
-      border: none;
-      box-shadow: 0 0 8px rgba(235, 62, 191, 0.342); }
-      .contacto__formulario .formulario .input:focus {
-        background-color: #f5738b;
-        transform: scale(1.1);
-        transition: background-color 1s; }
-  .contacto__formulario .flex-enviar {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .contacto__formulario .flex-enviar .discos {
-      margin: 5px;
-      font-size: 14px;
-      text-align: center;
-      border-radius: 10px;
-      display: flex; }
-  .contacto__formulario .boton-enviar {
-    padding: 5px;
-    margin: 13px;
-    border: 2px solid #5d1979e5;
-    background-color: #f8b8f3; }
-
-.boton-enviar:hover {
-  transition: color 1s;
-  background-color: #5d1979e5;
-  color: white; }
-
 nav {
   background-color: #f5738b; }
   nav .navbar-brand {
@@ -341,6 +278,127 @@ footer {
   footer {
     min-height: 10vh; } }
 
+.header {
+  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683739756/Harry1-1_ahowes.webp");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around; }
+  .header .titulo {
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+    font-family: "Sacramento", cursive;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px 30px 10px 30px;
+    color: #ffffff6e; }
+
+.main__index {
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+  margin: 10px; }
+  .main__index p {
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold; }
+    .main__index p::before {
+      content: "✨"; }
+  .main__index img {
+    width: 420px; }
+
+@media (max-width: 768px) {
+  .main__index p {
+    font-size: 13px; }
+  .main__index img {
+    width: 250px; } }
+
+@media (max-width: 425px) {
+  .header .titulo {
+    font-size: 28px; }
+  h1 {
+    font-size: 21px; }
+  .main__index {
+    display: flex;
+    flex-direction: column; }
+    .main__index p {
+      font-size: 12px;
+      margin: 10px; }
+    .main__index img {
+      width: 200px; } }
+
+@media (max-width: 375px) {
+  .header .titulo {
+    font-size: 20px; }
+  h1 {
+    font-size: 23px;
+    margin: 0; }
+  .main__index {
+    margin: 0;
+    padding: 5px;
+    min-height: 80vh; }
+    .main__index p {
+      font-size: 10px; }
+    .main__index img {
+      width: 190px; } }
+
+.contacto__fondo {
+  background: linear-gradient(205deg, rgba(245, 115, 139, 0.286152) 12%, rgba(207, 193, 209, 0.112482) 50%, rgba(245, 115, 139, 0.193715) 88%, rgba(245, 115, 139, 0.193715) 95%); }
+  .contacto__fondo__titulo-principal {
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    font-family: "Sacramento", cursive;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px 30px 10px 30px; }
+  .contacto__fondo__secundario {
+    color: #f5738b;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px; }
+
+.contacto__formulario {
+  min-height: 60vh; }
+  .contacto__formulario .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    align-items: center;
+    justify-content: space-around; }
+    .contacto__formulario .formulario .input {
+      margin: 7px;
+      padding: 5px;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 10px;
+      display: flex;
+      border: none;
+      box-shadow: 0 0 8px rgba(235, 62, 191, 0.342); }
+      .contacto__formulario .formulario .input:focus {
+        background-color: #f5738b;
+        transform: scale(1.1);
+        transition: background-color 1s; }
+  .contacto__formulario .boton-enviar {
+    padding: 5px;
+    margin: 13px;
+    border: 2px solid #5d1979e5;
+    background-color: #f8b8f3; }
+
+.boton-enviar:hover {
+  transition: color 1s;
+  background-color: #5d1979e5;
+  color: white; }
+
+.fondo-biografia {
+  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg"); }
+
 h1 {
   display: flex;
   font-size: 35px;
@@ -350,9 +408,6 @@ h1 {
   font-style: italic;
   padding: 10px 30px 10px 30px;
   color: #d91783; }
-
-.fondo-biografia {
-  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg"); }
 
 .main__biografia {
   min-height: 50vh;
@@ -372,7 +427,7 @@ h1 {
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(231 13 174 / 60%); }
 
 .filmografia {
-  width: 100vw;
+  width: 98vw;
   margin: 15px; }
   .filmografia h3 {
     color: #f5738b;
@@ -387,14 +442,14 @@ h1 {
   .filmografia__tarjeta {
     background-color: #f98b9f42;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.342);
-    width: 90vw;
-    margin-left: 40px;
+    width: 70vw;
+    margin-left: 150px;
     margin-bottom: 30px;
     display: flex;
     align-items: center; }
     .filmografia__tarjeta__parrafos {
-      font-size: 15px;
-      margin: 15px; }
+      margin-top: 10px;
+      font-size: 15px; }
     .filmografia__tarjeta__flex {
       display: flex; }
       .filmografia__tarjeta__flex iframe {
@@ -402,95 +457,56 @@ h1 {
 
 @media (max-width: 768px) {
   .main__biografia {
-    min-height: 75vh; } }
+    min-height: 50vh; }
+  .filmografia h3 {
+    display: flex;
+    justify-content: space-around; }
+  .filmografia p {
+    margin: 10px; }
+  .filmografia__tarjeta {
+    width: 88vw;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; }
+  .filmografia__videos {
+    margin-left: 180px; } }
 
 @media (max-width: 425px) {
   h1 {
-    font-size: 20px !important; } }
-
-.titulo {
-  display: flex;
-  font-size: 36px;
-  justify-content: center;
-  font-family: "Sacramento", cursive;
-  font-weight: bolder;
-  font-style: italic;
-  padding: 10px 30px 10px 30px;
-  color: #ffffff6e; }
-
-h2 {
-  color: #f5738b;
-  font-style: italic;
-  font-size: 18px;
-  text-align: center; }
-
-h1 {
-  margin-top: 1rem; }
-
-.header {
-  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683739756/Harry1-1_ahowes.webp");
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: space-around; }
-
-.main__index {
-  display: flex;
-  align-items: center;
-  min-height: 60vh;
-  margin: 10px; }
-  .main__index p {
-    margin: 10px 10px 10px 10px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: bold; }
-    .main__index p::before {
-      content: "✨"; }
-  .main__index img {
-    width: 420px; }
-
-@media (max-width: 767px) {
-  .main__index {
-    display: flex;
-    flex-direction: column; }
-    .main__index p {
-      font-size: 10px; }
-    .main__index img {
-      width: 250px; } }
-
-@media (max-width: 594px) {
-  h1 {
-    font-size: 15px; }
+    font-size: 26px; }
+  .fondo-biografia {
+    display: none; }
   h2 {
-    font-size: 10px;
-    margin: 10px 10px 10px 10px; }
-  .main__index p {
+    font-size: 14px;
+    margin: 7px; }
+  .filmografia {
+    margin: 0; }
+    .filmografia h3 {
+      font-size: 20px; }
+    .filmografia__tarjeta {
+      width: 80vw; }
+    .filmografia__videos {
+      margin-left: 20px; } }
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 23px; }
+  h2 {
     font-size: 12px;
-    margin: 10px; }
-  .main__index img {
-    width: 230px; } }
-
-@media (max-width: 404px) {
-  h1 {
-    display: flex;
-    font-size: 15px;
-    justify-content: center;
-    font-family: "Sacramento", cursive;
     font-weight: bolder;
-    font-style: italic;
-    padding: 10px 30px 10px 30px; }
+    margin: 10px; }
+  .filmografia__tarjeta {
+    width: 90vw;
+    margin-left: 18px; } }
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 19px; }
   h2 {
-    color: #f5738b;
-    font-style: italic;
-    font-size: 12px; }
-  .main__index {
-    margin: 0;
-    padding: 20px;
-    min-height: 80vh; }
-    .main__index p {
-      font-size: 10px; }
-    .main__index img {
-      width: 190px; } }
+    font-size: 10px; }
+  .filmografia__tarjeta {
+    width: 95vw;
+    margin-left: 7px; }
+  .filmografia__videos {
+    margin-left: 3px; } }
