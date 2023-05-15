@@ -12,15 +12,8 @@
 h2 {
     @include titulo-secundario (18px);
     text-align: center;
-}
-
-h3 {
-    @include titulo-secundario (18px);
-    text-align: center;
     padding: 15px;
 }
-
-
 
 .youtube {
     display: flex;
@@ -36,7 +29,7 @@ h3 {
     display: flex;
 }
 
-.boton{
+.boton {
     color: white;
     text-decoration: none;
 }
@@ -133,8 +126,48 @@ h3 {
     transition: all .5s ease-in-out;
 }
 
-//  @media(max-width: 768px) {
-//     .main__discografia{
-//         align-items: center;
-//     }
-//  }
+// responsive 
+
+@media(max-width: 768px) {
+    .body-discos {
+        width: 80vw;
+    }
+
+    .wrapper {
+        position: relative;
+        left: 13%;
+    }
+}
+
+@media(max-width: 425px) {
+    .fondo-discografia {
+        display: none;
+    }
+    .body-discos {
+        width: 45vw;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        .descriptions {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .body-discos {
+        height: 56vh;
+        width: 47vw;
+        .wrapper {
+            width: 95%;
+            .descriptions {
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

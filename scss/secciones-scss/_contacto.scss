@@ -10,12 +10,12 @@
         text-align: center;
         margin-top: 10px;
     }
-    }
+}
 
 // formulario
 
 .contacto__formulario {
-    min-height: 60vh;
+    min-height: 63vh;
 
     .formulario {
         display: flex;
@@ -25,8 +25,8 @@
         justify-content: space-around;
 
         .input {
-            margin: 7px;
-            padding: 5px;
+            margin: 4px;
+            padding: 4px;
             font-size: 14px;
             text-align: center;
             border-radius: 10px;
@@ -44,7 +44,7 @@
 
     .boton-enviar {
         padding: 5px;
-        margin: 13px;
+        margin: 20px;
         border: 2px solid #5d1979e5;
         background-color: #f8b8f3;
     }
@@ -55,5 +55,3 @@
     background-color: #5d1979e5;
     color: white;
 }
-
-
