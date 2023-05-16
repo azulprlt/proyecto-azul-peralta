@@ -12,7 +12,8 @@
     color: #fdfeff79;
     font-family: $titulo-principal;
     display: flex;
-    justify-content: flex-end;
+    border-radius: 0 0 60% 60% / 30%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.342);
 }
 
 @mixin titulo-principal ($fuente) {

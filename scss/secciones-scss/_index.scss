@@ -1,12 +1,9 @@
 //index.html body
 .header {
     background-image: url('https://res.cloudinary.com/dcsngmqbi/image/upload/v1683739756/Harry1-1_ahowes.webp');
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .fondo;
     background-position: center;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     .titulo {
         @include titulo-principal(36px);

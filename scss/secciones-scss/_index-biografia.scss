@@ -1,6 +1,7 @@
 .fondo-biografia {
     background-image: url('https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg');
     @extend .fondo;
+    justify-content: flex-end;
 }
 
 h1 {
@@ -36,6 +37,7 @@ h1 {
     h3 {
         @include titulo-secundario (24px);
         font-weight: bolder;
+        margin: 50px;
     }
 
     h4 {

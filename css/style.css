@@ -12,14 +12,15 @@
   flex-direction: column;
   align-items: center; }
 
-.fondo, .fondo-discografia, .fondo-biografia {
+.fondo, .fondo-discografia, .header, .fondo-biografia {
   height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fdfeff79;
   font-family: "Sacramento", cursive;
   display: flex;
-  justify-content: flex-end; }
+  border-radius: 0 0 60% 60% / 30%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.342); }
 
 nav {
   background-color: #f5738b; }
@@ -139,7 +140,8 @@ nav {
     height: 130px; } }
 
 .fondo-discografia {
-  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683840782/739436621_230685598_1706x960_jopsrf.webp"); }
+  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683840782/739436621_230685598_1706x960_jopsrf.webp");
+  justify-content: flex-end; }
 
 .main__discografia {
   display: flex;
@@ -277,8 +279,8 @@ h2 {
 
 footer {
   background-color: #f5738b;
-  min-height: 14vh;
-  width: 98.5vw; }
+  min-height: 12vh;
+  width: 100vw; }
   footer .redes {
     display: flex;
     justify-content: center; }
@@ -308,12 +310,8 @@ footer {
 
 .header {
   background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683739756/Harry1-1_ahowes.webp");
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: space-around; }
+  justify-content: center; }
   .header .titulo {
     display: flex;
     font-size: 36px;
@@ -375,57 +373,9 @@ footer {
     .main__index img {
       width: 190px; } }
 
-.contacto__fondo {
-  background: linear-gradient(205deg, rgba(245, 115, 139, 0.286152) 12%, rgba(207, 193, 209, 0.112482) 50%, rgba(245, 115, 139, 0.193715) 88%, rgba(245, 115, 139, 0.193715) 95%); }
-  .contacto__fondo__titulo-principal {
-    display: flex;
-    font-size: 35px;
-    justify-content: center;
-    font-family: "Sacramento", cursive;
-    font-weight: bolder;
-    font-style: italic;
-    padding: 10px 30px 10px 30px; }
-  .contacto__fondo__secundario {
-    color: #f5738b;
-    font-style: italic;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 10px; }
-
-.contacto__formulario {
-  min-height: 63vh; }
-  .contacto__formulario .formulario {
-    display: flex;
-    flex-direction: column;
-    width: 99vw;
-    align-items: center;
-    justify-content: space-around; }
-    .contacto__formulario .formulario .input {
-      margin: 4px;
-      padding: 4px;
-      font-size: 14px;
-      text-align: center;
-      border-radius: 10px;
-      display: flex;
-      border: none;
-      box-shadow: 0 0 8px rgba(235, 62, 191, 0.342); }
-      .contacto__formulario .formulario .input:focus {
-        background-color: #f5738b;
-        transform: scale(1.1);
-        transition: background-color 1s; }
-  .contacto__formulario .boton-enviar {
-    padding: 5px;
-    margin: 20px;
-    border: 2px solid #5d1979e5;
-    background-color: #f8b8f3; }
-
-.boton-enviar:hover {
-  transition: color 1s;
-  background-color: #5d1979e5;
-  color: white; }
-
 .fondo-biografia {
-  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg"); }
+  background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683824943/harry_xzbfap.jpg");
+  justify-content: flex-end; }
 
 h1 {
   display: flex;
@@ -461,7 +411,8 @@ h1 {
     color: #f5738b;
     font-style: italic;
     font-size: 24px;
-    font-weight: bolder; }
+    font-weight: bolder;
+    margin: 50px; }
   .filmografia h4 {
     color: #f806bc;
     font-size: 21px;
@@ -538,3 +489,129 @@ h1 {
     margin-left: 7px; }
   .filmografia__videos {
     margin-left: 3px; } }
+
+.contacto__fondo {
+  background: linear-gradient(205deg, rgba(245, 115, 139, 0.286152) 12%, rgba(207, 193, 209, 0.112482) 50%, rgba(245, 115, 139, 0.193715) 88%, rgba(245, 115, 139, 0.193715) 95%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  .contacto__fondo__titulo-principal {
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    font-family: "Sacramento", cursive;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px 30px 10px 30px; }
+  .contacto__fondo__secundario {
+    color: #f5738b;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px; }
+
+.contacto__formulario {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacto__formulario .formulario {
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    align-items: center;
+    justify-content: space-around;
+    border: white 5px solid;
+    box-shadow: 0 0 30px rgba(247, 69, 193, 0.397);
+    background: linear-gradient(205deg, rgba(245, 115, 139, 0.286152) 12%, rgba(207, 193, 209, 0.112482) 50%, rgba(245, 115, 139, 0.193715) 88%, rgba(245, 115, 139, 0.193715) 95%);
+    margin-left: 50p; }
+    .contacto__formulario .formulario .input {
+      margin: 4px;
+      padding: 4px;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 10px;
+      display: flex;
+      border: none;
+      box-shadow: 0 0 8px rgba(235, 62, 191, 0.342); }
+      .contacto__formulario .formulario .input:focus {
+        background-color: #f5738b;
+        transform: scale(1.1);
+        transition: background-color 1s; }
+  .contacto__formulario .boton-enviar {
+    padding: 5px;
+    margin: 20px;
+    border: 2px solid #5d1979e5;
+    background-color: #f8b8f3; }
+
+.boton-enviar:hover {
+  transition: color 1s;
+  background-color: #5d1979e5;
+  color: white; }
+
+.contacto__logos {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contacto__logos .contacto__titulo {
+    color: #f5738b;
+    font-style: italic;
+    font-size: 26px; }
+  .contacto__logos .contacto__parrafo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px; }
+  .contacto__logos .contacto__redes {
+    display: flex;
+    border: 3px white solid;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 20px;
+    width: 50vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px; }
+    .contacto__logos .contacto__redes h3 {
+      font-size: 20px; }
+    .contacto__logos .contacto__redes img {
+      width: 80px; }
+
+@media (max-width: 768px) {
+  .contacto__formulario {
+    margin-top: 15px;
+    margin-bottom: 30px; }
+    .contacto__formulario .formulario {
+      width: 35vw; }
+  .contacto__logos {
+    width: 80vw;
+    height: 45vh;
+    margin-left: 75px; }
+    .contacto__logos .contacto__parrafo {
+      font-size: 15px; } }
+
+@media (max-width: 425px) {
+  .contacto__formulario .formulario {
+    width: 62vw; }
+  .contacto__logos {
+    width: 90vw;
+    margin-left: 25px; }
+    .contacto__logos .contacto__redes {
+      width: 70vw; }
+      .contacto__logos .contacto__redes img {
+        width: 60px; } }
+
+@media (max-width: 375px) {
+  .contacto__logos .contacto__redes {
+    width: 85vw; } }
+
+@media (max-width: 320px) {
+  .contacto__logos {
+    width: 80vw;
+    height: 52vh; }
+    .contacto__logos .contacto__redes {
+      width: 76vw; }
+      .contacto__logos .contacto__redes img {
+        width: 50px; }
+    .contacto__logos .contacto__titulo {
+      font-size: 20px; } }
