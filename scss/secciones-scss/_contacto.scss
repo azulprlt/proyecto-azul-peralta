@@ -1,6 +1,6 @@
 .contacto__fondo {
     background: linear-gradient(205deg, rgba(245, 115, 139, 0.2861519607843137) 12%, rgba(207, 193, 209, 0.11248249299719892) 50%, rgba(245, 115, 139, 0.19371498599439774) 88%, rgba(245, 115, 139, 0.19371498599439774) 95%);
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
 
@@ -127,6 +127,17 @@
 }
 
 @media (max-width: 425px) {
+     .contacto__fondo {
+         h1 {
+             font-size: 30px;
+
+         }
+         h2 {
+             font-size: 17px;
+         }
+     }
+ }
+
     .contacto__formulario {
         .formulario {
             width: 62vw;
@@ -146,9 +157,9 @@
         }
 
     }
-}
 
 @media (max-width: 375px) {
+
     .contacto__logos {
         .contacto__redes {
             width: 85vw;
@@ -163,11 +174,13 @@
 
         .contacto__redes {
             width: 76vw;
+
             img {
                 width: 50px;
             }
         }
-        .contacto__titulo{
+
+        .contacto__titulo {
             font-size: 20px;
         }
     }

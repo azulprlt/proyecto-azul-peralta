@@ -122,7 +122,7 @@
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(8, 1fr);
-        width: 90vw;
+        width: 78vw;
         min-height: 90vh;
         grid-template-areas:
             "imagen1"
@@ -136,21 +136,21 @@
     }
 
     .grid-container img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
 }
 
 @media(max-width: 375px) {
     .grid-container {
-        width: 100vw;
+        width: 88vw;
         min-height: 85vh;
     }
 }
 
 @media(max-width: 320px) {
     .grid-container img {
-        width: 130px;
-        height: 130px;
+        width: 250px;
+        height: 250px;
     }
 }

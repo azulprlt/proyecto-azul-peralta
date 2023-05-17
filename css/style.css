@@ -122,22 +122,22 @@ nav {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    width: 90vw;
+    width: 78vw;
     min-height: 90vh;
     grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6" "imagen7" "imagen8"; }
   .grid-container img {
-    width: 350px;
-    height: 350px; } }
+    width: 300px;
+    height: 300px; } }
 
 @media (max-width: 375px) {
   .grid-container {
-    width: 100vw;
+    width: 88vw;
     min-height: 85vh; } }
 
 @media (max-width: 320px) {
   .grid-container img {
-    width: 130px;
-    height: 130px; } }
+    width: 250px;
+    height: 250px; } }
 
 .fondo-discografia {
   background-image: url("https://res.cloudinary.com/dcsngmqbi/image/upload/v1683840782/739436621_230685598_1706x960_jopsrf.webp");
@@ -151,7 +151,8 @@ nav {
 h2 {
   color: #f5738b;
   font-style: italic;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
   padding: 15px; }
 
@@ -236,7 +237,7 @@ h2 {
 
 .card button {
   width: fit-content;
-  height: 40px;
+  height: 35px;
   cursor: pointer;
   border-style: none;
   background-color: #ff3838;
@@ -250,7 +251,15 @@ h2 {
   transform: scale(0.95) translateX(-5px);
   transition: all .5s ease-in-out; }
 
+@media (max-width: 1024px) {
+  .body-discos {
+    height: 68vh; }
+  .wrapper {
+    left: 19%; } }
+
 @media (max-width: 768px) {
+  .fondo-discografia {
+    background-position: center; }
   .body-discos {
     width: 80vw; }
   .wrapper {
@@ -265,8 +274,13 @@ h2 {
   .wrapper {
     display: flex;
     flex-direction: column; }
-    .wrapper .descriptions p {
-      font-size: 12px; } }
+    .wrapper .descriptions {
+      padding: 12px; }
+      .wrapper .descriptions p {
+        font-size: 11px; }
+  .card p {
+    line-height: 16px;
+    height: 54%; } }
 
 @media (max-width: 375px) {
   .body-discos {
@@ -275,7 +289,10 @@ h2 {
     .body-discos .wrapper {
       width: 95%; }
       .body-discos .wrapper .descriptions p {
-        font-size: 10px; } }
+        font-size: 10px; }
+  .card button {
+    height: 30px;
+    font-size: 12px; } }
 
 footer {
   background-color: #f5738b;
@@ -319,6 +336,7 @@ footer {
     font-family: "Sacramento", cursive;
     font-weight: bolder;
     font-style: italic;
+    margin-top: 20px;
     padding: 10px 30px 10px 30px;
     color: #ffffff6e; }
 
@@ -384,6 +402,7 @@ h1 {
   font-family: "Sacramento", cursive;
   font-weight: bolder;
   font-style: italic;
+  margin-top: 20px;
   padding: 10px 30px 10px 30px;
   color: #d91783; }
 
@@ -394,6 +413,7 @@ h1 {
     color: #f5738b;
     font-style: italic;
     font-size: 18px;
+    font-weight: bold;
     text-align: center; }
 
 .accordion-button:not(.collapsed) {
@@ -411,6 +431,7 @@ h1 {
     color: #f5738b;
     font-style: italic;
     font-size: 24px;
+    font-weight: bold;
     font-weight: bolder;
     margin: 50px; }
   .filmografia h4 {
@@ -424,6 +445,7 @@ h1 {
     width: 70vw;
     margin-left: 150px;
     margin-bottom: 30px;
+    padding: 13px;
     display: flex;
     align-items: center; }
     .filmografia__tarjeta__parrafos {
@@ -434,7 +456,14 @@ h1 {
       .filmografia__tarjeta__flex iframe {
         padding: 15px; }
 
+.filmografia__link a {
+  color: #f806bc;
+  font-weight: bolder;
+  text-decoration: none; }
+
 @media (max-width: 768px) {
+  .fondo-biografia {
+    background-position: center; }
   .main__biografia {
     min-height: 50vh; }
   .filmografia h3 {
@@ -464,7 +493,8 @@ h1 {
     .filmografia h3 {
       font-size: 20px; }
     .filmografia__tarjeta {
-      width: 80vw; }
+      width: 85vw;
+      margin-left: 32px; }
     .filmografia__videos {
       margin-left: 20px; } }
 
@@ -476,23 +506,28 @@ h1 {
     font-weight: bolder;
     margin: 10px; }
   .filmografia__tarjeta {
-    width: 90vw;
-    margin-left: 18px; } }
+    width: 91vw;
+    margin-left: 18px; }
+  .filmografia__videos {
+    margin-left: 7px; } }
 
 @media (max-width: 320px) {
   h1 {
     font-size: 19px; }
   h2 {
-    font-size: 10px; }
+    font-size: 10px;
+    margin: 0; }
+  .filmografia h3 {
+    font-size: 19px; }
   .filmografia__tarjeta {
-    width: 95vw;
-    margin-left: 7px; }
+    width: 90vw;
+    margin-left: 17px; }
   .filmografia__videos {
-    margin-left: 3px; } }
+    display: none; } }
 
 .contacto__fondo {
   background: linear-gradient(205deg, rgba(245, 115, 139, 0.286152) 12%, rgba(207, 193, 209, 0.112482) 50%, rgba(245, 115, 139, 0.193715) 88%, rgba(245, 115, 139, 0.193715) 95%);
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column; }
   .contacto__fondo__titulo-principal {
@@ -502,11 +537,13 @@ h1 {
     font-family: "Sacramento", cursive;
     font-weight: bolder;
     font-style: italic;
+    margin-top: 20px;
     padding: 10px 30px 10px 30px; }
   .contacto__fondo__secundario {
     color: #f5738b;
     font-style: italic;
     font-size: 22px;
+    font-weight: bold;
     text-align: center;
     margin-top: 10px; }
 
@@ -559,7 +596,8 @@ h1 {
   .contacto__logos .contacto__titulo {
     color: #f5738b;
     font-style: italic;
-    font-size: 26px; }
+    font-size: 26px;
+    font-weight: bold; }
   .contacto__logos .contacto__parrafo {
     font-family: "Montserrat", sans-serif;
     font-size: 17px; }
@@ -591,15 +629,21 @@ h1 {
       font-size: 15px; } }
 
 @media (max-width: 425px) {
-  .contacto__formulario .formulario {
-    width: 62vw; }
-  .contacto__logos {
-    width: 90vw;
-    margin-left: 25px; }
-    .contacto__logos .contacto__redes {
-      width: 70vw; }
-      .contacto__logos .contacto__redes img {
-        width: 60px; } }
+  .contacto__fondo h1 {
+    font-size: 30px; }
+  .contacto__fondo h2 {
+    font-size: 17px; } }
+
+.contacto__formulario .formulario {
+  width: 62vw; }
+
+.contacto__logos {
+  width: 90vw;
+  margin-left: 25px; }
+  .contacto__logos .contacto__redes {
+    width: 70vw; }
+    .contacto__logos .contacto__redes img {
+      width: 60px; }
 
 @media (max-width: 375px) {
   .contacto__logos .contacto__redes {

@@ -11,7 +11,7 @@
 }
 
 h2 {
-    @include titulo-secundario (18px);
+    @include titulo-secundario (20px);
     text-align: center;
     padding: 15px;
 }
@@ -111,7 +111,7 @@ h2 {
 
 .card button {
     width: fit-content;
-    height: 40px;
+    height: 35px;
     cursor: pointer;
     border-style: none;
     background-color: #ff3838;
@@ -128,8 +128,22 @@ h2 {
 }
 
 // responsive 
+@media(max-width: 1024px) {
+    .body-discos {
+        height: 68vh;
+    }
+
+    .wrapper {
+        left: 19%;
+    }
+}
+
 
 @media(max-width: 768px) {
+    .fondo-discografia {
+        background-position: center;
+    }
+
     .body-discos {
         width: 80vw;
     }
@@ -144,17 +158,27 @@ h2 {
     .fondo-discografia {
         display: none;
     }
+
     .body-discos {
         width: 45vw;
     }
+
     .wrapper {
         display: flex;
         flex-direction: column;
+
         .descriptions {
+            padding: 12px;
+
             p {
-                font-size: 12px;
+                font-size: 11px;
             }
         }
+    }
+
+    .card p {
+        line-height: 16px;
+        height: 54%;
     }
 }
 
@@ -162,13 +186,20 @@ h2 {
     .body-discos {
         height: 56vh;
         width: 47vw;
+
         .wrapper {
             width: 95%;
+
             .descriptions {
                 p {
                     font-size: 10px;
                 }
             }
         }
+    }
+
+    .card button {
+        height: 30px;
+        font-size: 12px;
     }
 }
