@@ -177,7 +177,6 @@ h2 {
 .wrapper {
   position: relative;
   left: 28%;
-  width: 100%;
   max-width: 680px;
   height: auto;
   display: flex;
@@ -273,6 +272,7 @@ h2 {
   .fondo-discografia {
     display: none; }
   .body-discos {
+    height: 57vh;
     width: 45vw; }
   .wrapper {
     display: flex;

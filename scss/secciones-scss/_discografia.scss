@@ -39,7 +39,7 @@ h2 {
     position: relative;
     left: 28%;
     // transform: translate(-50%, -50%);
-    width: 100%;
+    // width: 100%;
     max-width: 680px;
     height: auto;
     display: flex;
@@ -160,6 +160,7 @@ h2 {
     }
 
     .body-discos {
+        height: 57vh;
         width: 45vw;
     }
 
