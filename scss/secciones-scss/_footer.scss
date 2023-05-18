@@ -2,11 +2,13 @@ footer {
     @extend .flex;
     background-color: $color-principal;
     min-height: 12vh;
-    width: 100vw;
+    width: 98.7vw;
+    margin: 0;
 
     .redes {
         display: flex;
         justify-content: center;
+
         li {
             list-style: none;
             font-size: 1rem;
@@ -21,19 +23,28 @@ footer {
 
         p {
             margin: 0;
-            a{
-                &:link{
+
+            a {
+                &:link {
                     color: #fd0303;
                 }
-                &:active{
-                    color:#580505;
+
+                &:active {
+                    color: #580505;
                 }
-                &:visited{
+
+                &:visited {
                     color: black;
                 }
 
             }
         }
+    }
+}
+
+@media (max-width: 1024px) {
+    footer {
+        width: 100vw;
     }
 }
 
@@ -44,7 +55,7 @@ footer {
 }
 
 @media(max-width: 320px) {
-    footer{
+    footer {
         min-height: 10vh;
     }
 }

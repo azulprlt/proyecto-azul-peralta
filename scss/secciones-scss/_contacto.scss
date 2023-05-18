@@ -19,7 +19,6 @@
 
 .contacto__formulario {
     // height: 65vh;
-    margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,14 +27,9 @@
         min-height: 65vh;
         display: flex;
         flex-direction: column;
-        width: 20vw;
+        width: 26vw;
         align-items: center;
         justify-content: space-around;
-        border: rgb(255, 255, 255) 5px solid;
-        box-shadow: 0 0 30px rgba(247, 69, 193, 0.397);
-        ;
-        background: linear-gradient(205deg, rgba(245, 115, 139, 0.2861519607843137) 12%, rgba(207, 193, 209, 0.11248249299719892) 50%, rgba(245, 115, 139, 0.19371498599439774) 88%, rgba(245, 115, 139, 0.19371498599439774) 95%);
-        margin-left: 50p;
 
         .input {
             margin: 4px;
@@ -71,10 +65,11 @@
 
 .contacto__logos {
     height: 35vh;
+    width: 93vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     .contacto__titulo {
         @include titulo-secundario (26px)
@@ -106,19 +101,10 @@
 }
 
 @media(max-width: 768px) {
-    .contacto__formulario {
-        margin-top: 15px;
-        margin-bottom: 30px;
-
-        .formulario {
-            width: 35vw;
-        }
-    }
-
     .contacto__logos {
         width: 80vw;
         height: 45vh;
-        margin-left: 75px;
+        // margin-left: 75px;
 
         .contacto__parrafo {
             font-size: 15px;
@@ -127,36 +113,31 @@
 }
 
 @media (max-width: 425px) {
-     .contacto__fondo {
-         h1 {
-             font-size: 30px;
+    .contacto__fondo {
+        h1 {
+            font-size: 30px;
 
-         }
-         h2 {
-             font-size: 17px;
-         }
-     }
- }
+        }
 
-    .contacto__formulario {
-        .formulario {
-            width: 62vw;
+        h2 {
+            font-size: 17px;
+        }
+    }
+}
+
+.contacto__logos {
+    width: 90vw;
+    margin-left: 25px;
+
+    .contacto__redes {
+        width: 70vw;
+
+        img {
+            width: 60px;
         }
     }
 
-    .contacto__logos {
-        width: 90vw;
-        margin-left: 25px;
-
-        .contacto__redes {
-            width: 70vw;
-
-            img {
-                width: 60px;
-            }
-        }
-
-    }
+}
 
 @media (max-width: 375px) {
 

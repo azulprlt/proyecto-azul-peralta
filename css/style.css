@@ -24,6 +24,9 @@
 
 nav {
   background-color: #f5738b; }
+  nav .container-fluid {
+    margin: 0;
+    padding: 1px; }
   nav .navbar-brand {
     color: white;
     font-style: italic;
@@ -297,7 +300,8 @@ h2 {
 footer {
   background-color: #f5738b;
   min-height: 12vh;
-  width: 100vw; }
+  width: 98.7vw;
+  margin: 0; }
   footer .redes {
     display: flex;
     justify-content: center; }
@@ -316,6 +320,10 @@ footer {
         color: #580505; }
       footer .terminos p a:visited {
         color: black; }
+
+@media (max-width: 1024px) {
+  footer {
+    width: 100vw; } }
 
 @media (max-width: 425px) {
   footer {
@@ -337,14 +345,14 @@ footer {
     font-weight: bolder;
     font-style: italic;
     margin-top: 20px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px 10px 0px;
     color: #ffffff6e; }
 
 .main__index {
   display: flex;
   align-items: center;
   min-height: 60vh;
-  margin: 10px; }
+  margin: 0px; }
   .main__index p {
     margin: 10px 10px 10px 10px;
     text-align: center;
@@ -354,7 +362,7 @@ footer {
     .main__index p::before {
       content: "✨"; }
   .main__index img {
-    width: 420px; }
+    width: 390px; }
 
 @media (max-width: 768px) {
   .main__index p {
@@ -403,12 +411,11 @@ h1 {
   font-weight: bolder;
   font-style: italic;
   margin-top: 20px;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px 10px 0px;
   color: #d91783; }
 
 .main__biografia {
-  min-height: 50vh;
-  padding: 10px; }
+  min-height: 50vh; }
   .main__biografia__titulos {
     color: #f5738b;
     font-style: italic;
@@ -425,8 +432,7 @@ h1 {
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(231 13 174 / 60%); }
 
 .filmografia {
-  width: 98vw;
-  margin: 15px; }
+  width: 98vw; }
   .filmografia h3 {
     color: #f5738b;
     font-style: italic;
@@ -538,7 +544,7 @@ h1 {
     font-weight: bolder;
     font-style: italic;
     margin-top: 20px;
-    padding: 10px 30px 10px 30px; }
+    padding: 10px 30px 10px 0px; }
   .contacto__fondo__secundario {
     color: #f5738b;
     font-style: italic;
@@ -548,7 +554,6 @@ h1 {
     margin-top: 10px; }
 
 .contacto__formulario {
-  margin: 30px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -556,13 +561,9 @@ h1 {
     min-height: 65vh;
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 26vw;
     align-items: center;
-    justify-content: space-around;
-    border: white 5px solid;
-    box-shadow: 0 0 30px rgba(247, 69, 193, 0.397);
-    background: linear-gradient(205deg, rgba(245, 115, 139, 0.286152) 12%, rgba(207, 193, 209, 0.112482) 50%, rgba(245, 115, 139, 0.193715) 88%, rgba(245, 115, 139, 0.193715) 95%);
-    margin-left: 50p; }
+    justify-content: space-around; }
     .contacto__formulario .formulario .input {
       margin: 4px;
       padding: 4px;
@@ -589,10 +590,11 @@ h1 {
 
 .contacto__logos {
   height: 35vh;
+  width: 93vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: flex-start; }
   .contacto__logos .contacto__titulo {
     color: #f5738b;
     font-style: italic;
@@ -616,15 +618,9 @@ h1 {
       width: 80px; }
 
 @media (max-width: 768px) {
-  .contacto__formulario {
-    margin-top: 15px;
-    margin-bottom: 30px; }
-    .contacto__formulario .formulario {
-      width: 35vw; }
   .contacto__logos {
     width: 80vw;
-    height: 45vh;
-    margin-left: 75px; }
+    height: 45vh; }
     .contacto__logos .contacto__parrafo {
       font-size: 15px; } }
 
@@ -633,9 +629,6 @@ h1 {
     font-size: 30px; }
   .contacto__fondo h2 {
     font-size: 17px; } }
-
-.contacto__formulario .formulario {
-  width: 62vw; }
 
 .contacto__logos {
   width: 90vw;
